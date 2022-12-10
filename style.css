@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: block;
+}
+li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 15px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    width: 100%;
+}
+.main-nav {
+    padding: 20px 0;
+    font-size: 23px;
+}
+.d-flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.flex-column{
+    flex-direction: column;
+}
+.align-end {
+    align-items: flex-end !important;
+}
+.d-gap{
+    gap: 100px;
+}
+
+/* header end here  */
+.intro-section {
+    background-color: rgb(111, 155, 124);
+    height: 65vh;
+    display: grid;
+    place-items: center;
+    clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+}
+.intro {
+    font-size: 50px;
+    text-align: center;
+}
+/* intro section end here  */
+
+.about {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 30px;
+}
+.about h2 {position: relative;}
+.about h2::after{
+    position: absolute;
+    background-color: #000111;
+    content: "";
+    height: 3px;
+    width: 165px;
+    bottom: 0;
+    left: 43%;
+}
+.w-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-img img {
+    height: auto;
+    width: 300px;
+}
+.hero-text h2{position: relative;}
+.hero-text h2::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    background-color: #000111;
+    height: 2px;
+    width: 50px;
+    bottom: 1rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+.progress{
+    width: 80%;
+    display: block;
+    background-color: #ddd;
+}
+.bar {
+    height: 20px;
+    background-color: rgb(111, 155, 124);
+    width: 0;
+    padding: 0 10px;
+    opacity: 0;
+    transition: all .5s;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.p-1 {
+    padding: 1rem;
+}
+.education li {
+    margin-top: 1rem;
+}
+/* .about section end here  */
+
+.project-img {
+    width: 30%;
+    margin-bottom: 1rem;
+    border: 1px solid #000111;
+    position: relative;
+}
+.project-img img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.project-name h2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.contact {
+    display: block;
+    background-color: rgb(111, 155, 124);
+    width: 45%;
+    font-size: 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    color: white;
+}
+.contact:hover {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 25%);
+}
+.contact label, .contact p {
+    display: block;
+}
+.location {
+    width: 50%;
+}
+.contact-link{
+    width: 60%;
+    display: block;
+}
+.footer-section {
+    background-color: rgb(111, 155, 124);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+.footer-section a:hover {
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+.btn {
+    display: grid;
+    place-items: center;
+}
+.btn button {
+    padding: 20px 30px;;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    background-color: rgb(111, 155, 124);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.btn a {
+    color: white;
+}
+.btn button:hover {
+    background-color: #fff;
+}
+.btn button:hover a {
+    color: black;
+}
