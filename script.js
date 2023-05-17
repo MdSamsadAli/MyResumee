@@ -33,7 +33,7 @@ let image = document.getElementById("image");
 let images = [
   "images/sam (1).png",
   "images/sam (2).png",
-  "images/sam (4).png",
+  "images/sam (3).png",
   "images/sam (5).png",
 ];
 setInterval(function () {

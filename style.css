@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    overflow-x: hidden;
+}
 ul {
     display: block;
 }
@@ -35,6 +37,9 @@ img {
 .justify-between {
     justify-content: space-between;
 }
+.justify-center{
+    justify-content: center;
+}
 .flex-column{
     flex-direction: column;
 }
@@ -63,6 +68,7 @@ img {
     margin: 50px 0;
     text-align: center;
     font-size: 30px;
+    position: relative;
 }
 .about h2 {position: relative;}
 .about h2::after{
@@ -120,6 +126,10 @@ img {
 }
 /* .about section end here  */
 
+.project {
+    position: relative;
+    padding-right: 4rem;
+}
 .project-img {
     width: 30%;
     margin-bottom: 1rem;
@@ -143,9 +153,6 @@ img {
     font-size: 20px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
     color: white;
-}
-.contact:hover {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 25%);
 }
 .contact label, .contact p {
     display: block;
@@ -189,4 +196,39 @@ img {
 }
 .btn button:hover a {
     color: black;
+}
+
+/* reactangles shaded in rectangle */
+.rect-rad {
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(111, 155, 124);
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+.rect-rad:nth-child(1){
+    margin-top: 0;
+}
+.rect-rad:nth-child(2){
+    margin-top: 0;
+}
+.rect-rad:nth-child(3){
+    margin-top: 0;
+}
+.rect-rad-in {
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(111, 155, 124);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+}
+.w-10 {
+    width: 60%;
+}
+.pos-abs {
+    position: absolute;
+    right: 23rem;
+    top: 0rem;
 }
