@@ -30,13 +30,19 @@ window.addEventListener("scroll", () => {
 
 // for randomly changing images
 let image = document.getElementById("image");
-let images = [
-  "images/sam (1).png",
-  "images/sam (2).png",
-  "images/sam (3).png",
-  "images/sam (5).png",
-];
+let images = ["images/sam (1).png", "images/sam (2).png", "images/pp.jpg"];
 setInterval(function () {
-  let random = Math.floor(Math.random() * 4);
+  let random = Math.floor(Math.random() * 3);
   image.src = images[random];
 }, 800);
+
+// sticky header
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  if (window.scrollY > 0) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+});
