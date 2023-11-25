@@ -14,22 +14,25 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <header class="sticky">
-      <div class="d-flex main-nav justify-around align-center">
+      <div class="d-flex main-nav justify-between align-center">
         <div class="logo">
-          <h2><a href="#">MD</a></h2>
+          <h2>
+            <a href="#">MD</a>
+          </h2>
         </div>
         <div class="nav-brand nav">
-          <ul>
+          <ul class="nav-items">
             <li><a href="#about">About Me</a></li>
             <li><a href="#project">Project</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="nav-brand">
-          <ul>
+          <ul class="nav-items social-icons">
             <li>
               <a
                 href="https://www.facebook.com/samsad.shiddique.9"
@@ -57,6 +60,9 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="hamburger">
+          <i class="fa fa-hamburger"></i>
         </div>
       </div>
     </header>
@@ -95,8 +101,8 @@
           </div>
         </div>
       </div>
-      <div class="w-80">
-        <div class="d-flex">
+      <div class="w-80 w-100">
+        <div class="d-flex place-center">
           <div class="hero-img">
             <img src="./images/pp.jpg" alt="samsad" id="image" />
           </div>
@@ -115,7 +121,7 @@
               <li>
                 <span class="bold">Bachelor Information Technology</span> From
                 <span class="bold">Kist College, Kamalpokhari</span> &#40; 2018
-                &#8211; running &#41;
+                &#8211; 2023 &#41;
               </li>
               <li>
                 <span class="bold">High School +2 Science</span> From
@@ -132,7 +138,7 @@
             </div>
             <div id="skills-section">
               <h2 class="p-1">Skills</h2>
-              <ul class="d-flex flex-column">
+              <ul class="d-flex flex-column w-90 no-wrap">
                 <li class="d-flex justify-between mt-1">
                   <a href="#">HTML</a>
                   <div class="progress">
@@ -303,14 +309,14 @@
           </div>
         </div>
       </div>
-      <div class="w-80">
-        <div class="d-flex flex-wrap justify-between">
+      <div class="w-80 w-100">
+        <div class="d-flex flex-wrap flex-column-425">
           <div class="location">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.5748613599!2d85.34019396470123!3d27.699531882443047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199b48940f01%3A0x1652d3f9fc8df036!2sBhimsengola%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1670672516517!5m2!1sen!2snp"
-              width="600"
-              height="450"
               style="border: 0"
+              width="100%"
+              height="400px"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -349,6 +355,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(".nav-items").slideToggle();
+        });
+
+        $(window).resize(function () {
+          if ($(window).width() < 900) {
+            $(".nav-items").hide();
+          } else {
+            $(".nav-items").show();
+          }
+        });
+      });
     </script>
   </body>
 </html>

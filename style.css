@@ -25,7 +25,7 @@ img {
     width: 100%;
 }
 .main-nav {
-    padding: 20px 0;
+    padding: 20px;
     font-size: 23px;
 }
 .d-flex {
@@ -198,6 +198,7 @@ header.sticky {
 .location {
     width: 50%;
 }
+
 .contact-link{
     width: 60%;
     display: block;
@@ -269,4 +270,118 @@ header.sticky {
     position: absolute;
     right: 23rem;
     top: 0rem;
+}
+
+
+.hamburger {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+  .main-nav {
+    padding: 10px;
+  }
+  .nav-brand .nav-items {
+    display: none;
+    padding: 20px;
+
+  }
+  .nav-brand ul.nav-items {
+    background-color: rgb(111, 155, 124);
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+  .nav .nav-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .nav-items li {
+    margin-top: 10px;
+  }
+
+
+  .intro-section {
+        height: 50vh;
+    }
+
+    .intro {
+        font-size: 35px;
+    }
+    li {
+        margin-left: 8px;
+    }
+    .social-icons li a {
+        font-size: 18px;
+    }
+    .pos-abs {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro {
+        font-size: 25px;
+    }
+    .about {
+        margin: 1rem 0;
+        font-size: 22px;
+        padding: 1rem;
+    }
+    .about h2::after{
+        width: 80px;
+    }
+    .w-90 {
+        width: 90%;
+    }
+    .project-img {
+        width: 48%;
+    }
+    .contact {
+        width: 50%;
+    }
+    .place-center{
+        flex-wrap: wrap;
+        place-content: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .project-img {
+        width: 100%;
+    }
+    .w-100 {
+        width: 100%;
+    }
+    .footer-section{
+        font-size: 16px;
+    }
+    .contact {
+        font-size: 16px;
+    }
+    .d-flex {
+        flex-wrap: wrap;
+    }
+    .no-wrap {
+        flex-wrap: nowrap;
+    }
+    .logo, .about {
+        font-size: 16px;
+    }
+    .intro {
+        font-size: 18px;
+    }
+    .flex-column-425 {
+        flex-direction: column;
+    }
+    .location {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+        clip-path: none;
+        border-bottom: 1px solid white;
+    }
 }
